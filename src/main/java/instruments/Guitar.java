@@ -6,10 +6,12 @@ import instruments.InstrumentType;
 public class Guitar extends Instrument implements IPlay {
 
     private int numberOfStrings;
+    public String jam;
 
     public Guitar(String material, String colour, String sound, InstrumentType type, double buyPrice, double sellPrice, int numberOfStrings) {
         super(material, colour, sound, type, buyPrice, sellPrice);
         this.numberOfStrings = numberOfStrings;
+        this.jam = getSound();
     }
 
     public int getNumberOfStrings() {
@@ -18,6 +20,6 @@ public class Guitar extends Instrument implements IPlay {
 
     @Override
     public String play() {
-        return getSound();
+        return jam;
     }
 }

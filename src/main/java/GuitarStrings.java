@@ -1,8 +1,15 @@
-public class GuitarStrings extends Accessories{
+public class GuitarStrings extends Accessories implements ISell{
 
 
-    public GuitarStrings(String name, double buyPrice, double sellPrice, String description) {
-        super(name, buyPrice, sellPrice, description);
 
+    public GuitarStrings(double buyPrice, double sellPrice, String description) {
+        super(buyPrice, sellPrice, description);
+
+
+    }
+
+    @Override
+    public double calculateMarkup() {
+        return this.getSellPrice() - this.getBuyPrice();
     }
 }

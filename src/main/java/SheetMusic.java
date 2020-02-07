@@ -1,7 +1,12 @@
-public class SheetMusic extends Accessories {
+public class SheetMusic extends Accessories implements ISell{
 
 
-    public SheetMusic(String name, double buyPrice, double sellPrice, String description) {
-        super(name, buyPrice, sellPrice, description);
+    public SheetMusic(double buyPrice, double sellPrice, String description) {
+        super(buyPrice, sellPrice, description);
+    }
+
+    @Override
+    public double calculateMarkup() {
+        return this.getSellPrice() - this.getBuyPrice();
     }
 }
