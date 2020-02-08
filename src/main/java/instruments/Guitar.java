@@ -3,7 +3,7 @@ package instruments;
 import instruments.Instrument;
 import instruments.InstrumentType;
 
-public class Guitar extends Instrument implements IPlay {
+public class Guitar extends Instrument {
 
     private int numberOfStrings;
     public String jam;

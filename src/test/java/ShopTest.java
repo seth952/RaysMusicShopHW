@@ -22,6 +22,7 @@ public class ShopTest {
     private GuitarStrings guitarStrings2;
 
 
+
     @Before
     public void before(){
         guitar1 = new Guitar("Wood", "Sunburst", "Twang", InstrumentType.STRINGS, 300, 400, 6);
@@ -37,14 +38,26 @@ public class ShopTest {
         shop = new Shop();
 
 
+
     }
 
-//    @Test
-//    public void buyItems(){
-//        shop.addItem();
-//        assertEquals(1, shop.countStock());
-//
-//    }
+    @Test
+    public void buyItems(){
+        shop.addItem(guitarStrings1);
+        shop.addItem(guitarStrings2);
+        assertEquals(2, shop.countStock());
+
+    }
+    @Test
+    public void removeItems(){
+        shop.addItem(guitarStrings1);
+        shop.addItem(guitarStrings2);
+        shop.removeItem(guitarStrings1);
+        assertEquals(1, shop.countStock());
+
+    }
+
+
 
     @Test
     public void stockCount(){

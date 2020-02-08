@@ -3,7 +3,7 @@ package instruments;
 import instruments.Instrument;
 import instruments.InstrumentType;
 
-public class Drum extends Instrument implements IPlay {
+public class Drum extends Instrument {
 
     private int numberOfDrums;
 

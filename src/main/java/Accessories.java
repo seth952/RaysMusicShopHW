@@ -1,4 +1,4 @@
-public abstract class Accessories {
+public abstract class Accessories implements ISell {
 
 
     private double buyPrice;
