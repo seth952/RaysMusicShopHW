@@ -1,4 +1,6 @@
-import instruments.Guitar;
+package instrumentTests;
+
+import accessories.GuitarStrings;
 import org.junit.Before;
 import org.junit.Test;
 

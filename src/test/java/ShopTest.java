@@ -1,9 +1,8 @@
-import com.sun.tools.javac.jvm.Items;
+import accessories.GuitarStrings;
+import accessories.SheetMusic;
 import instruments.*;
 import org.junit.Before;
 import org.junit.Test;
-
-import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 

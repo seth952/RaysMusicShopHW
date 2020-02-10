@@ -1,11 +1,8 @@
-import instruments.Drum;
-import instruments.Guitar;
-import instruments.IPlay;
-import instruments.Piano;
+import behaviours.ISell;
 
 import java.util.ArrayList;
 
-public class Shop implements ISell {
+public class Shop {
 
 
     private ArrayList<ISell> stock;
@@ -16,24 +13,17 @@ public class Shop implements ISell {
     }
 
 
-    public void addItem(ISell...items ) {
-        for(ISell item : items)
+    public void addItem(ISell item ){
         this.stock.add(item);
     }
 
 
-    public void removeItem(ISell...items) {
-        for(ISell item : items) {
-            this.stock.remove(item);
-        }
+    public void removeItem(ISell item) {
+        this.stock.remove(item);
+
     }
 
-    @Override
-    public double calculateMarkup() {
-        return 0;
-    }
-
-
+    
 
 
     public int countStock() {

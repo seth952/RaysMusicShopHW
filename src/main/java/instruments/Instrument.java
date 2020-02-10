@@ -1,5 +1,7 @@
 package instruments;
 
+import behaviours.IPlay;
+
 public abstract class Instrument implements IPlay {
 
     private String material;

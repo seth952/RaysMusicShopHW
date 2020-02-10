@@ -1,4 +1,8 @@
-public class GuitarStrings extends Accessories implements ISell{
+package accessories;
+
+import behaviours.ISell;
+
+public class GuitarStrings extends Accessories implements ISell {
 
 
 
@@ -11,5 +15,6 @@ public class GuitarStrings extends Accessories implements ISell{
     @Override
     public double calculateMarkup() {
         return this.getSellPrice() - this.getBuyPrice();
+
     }
 }

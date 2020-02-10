@@ -1,4 +1,8 @@
-public class SheetMusic extends Accessories implements ISell{
+package accessories;
+
+import behaviours.ISell;
+
+public class SheetMusic extends Accessories implements ISell {
 
 
     public SheetMusic(double buyPrice, double sellPrice, String description) {

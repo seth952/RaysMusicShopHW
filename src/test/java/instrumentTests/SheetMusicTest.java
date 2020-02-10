@@ -1,3 +1,6 @@
+package instrumentTests;
+
+import accessories.SheetMusic;
 import org.junit.Before;
 import org.junit.Test;
 
